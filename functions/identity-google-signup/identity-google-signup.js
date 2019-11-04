@@ -6,7 +6,7 @@ exports.handler = async function(event, context) {
   const responseBodyString = JSON.stringify({
     query: `
     mutation insertUser($id: String, $email:String, $name:String){
-      insert_users(objects: {id: $id, email: $email, name: $name}) {
+      insert_user(objects: {id: $id, email: $email, name: $name}) {
         affected_rows
       }
     }    
